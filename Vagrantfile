@@ -3,7 +3,7 @@ Vagrant.configure("2") do |config|
     v.memory = 8192
     v.gui = true
   end
-  config.vm.box = "gpg.633de50d73f9087821d8ba4602754fefb47abf3a"
+  config.vm.box = "gpg.d5ab0cd62217c4edc65b716438cfc49f6787ac2b"
   config.vm.hostname = "myprecise.box"
   config.vm.network "forwarded_port", guest: 22, host: 20022
   config.vm.provision "shell", path: "provisioner.sh"
